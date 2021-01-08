@@ -98,9 +98,6 @@ function evenFinder(nums){
 
 
 
-
-
-
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
 
@@ -122,8 +119,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
-
+function divider(numbersArray){
+  let evenDivider = []
+  let oddDivider = []
+  for(let i = 0; i < numbersArray.length; i++){
+    if(numbersArray[i] % 2 === 0){
+      evenDivider.push(numbersArray[i])
+    }
+    else{
+      oddDivider.push(numbersArray[i])
+    }
+  }
+  return [evenDivider, oddDivider]
+}
 
 
 ////////// PROBLEM 7 //////////
